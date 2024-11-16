@@ -11,7 +11,7 @@ document.getElementById('productForm').addEventListener('submit', function(event
   });
 
   // Send the data to the REST API using fetch()
-  fetch('http://localhost:8080/products', {  // Replace with your actual API endpoint
+  fetch('http://localhost:8080/productservice/products', {  // Replace with your actual API endpoint
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'  // Tell the server you're sending JSON

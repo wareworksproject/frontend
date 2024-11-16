@@ -26,7 +26,7 @@
     async function fetchProducts() {
       try {
         // Fetch the API data
-        const response = await fetch('http://localhost:8080/productservice/products');
+        const response = await fetch('http://192.168.0.15:8080/productservice/products');
         const products = await response.json();
 
         // Get the table body element

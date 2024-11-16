@@ -11,7 +11,7 @@ document.getElementById('customerForm').addEventListener('submit', function(even
   });
 
   // Send the data to the REST API using fetch()
-  fetch('http://localhost:8080/customers', {  // Replace with your actual API endpoint
+  fetch('http://localhost:8080/customerservice/customers', {  // Replace with your actual API endpoint
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'  // Tell the server you're sending JSON

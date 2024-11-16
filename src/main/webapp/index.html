@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Online Sales Website</title>
 <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 a:link, a:visited {
   background-color: #f44336;
   color: white;
@@ -12,23 +29,42 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: grey;
 }
+
 </style>
 </head>
+
+
 <body>
 
-<h2>Online Sales FrontEnd</h2>
+<h2>Online Sales Website</h2>
 
-<p>The Link Gets List of Products From DB:</p>
-<a href="product-get.html" target="_blank">List Products (Get Method)</a>
-
-<p>The Link Post New Products to DB:</p>
-<a href="product-post.html" target="_blank">Save New Products (Post Method)</a>
+<table>
+  <tr>
+    <th>Our Services</th>
+    <th>(Get Method)</th>
+    <th>(Post Method)</th>
+  </tr>
+  <tr>
+    <td>Products Menu</td>
+    <td><a href="product-get.html" target="_blank">View Products</a></td>
+    <td><a href="product-post.html" target="_blank">Save New Products</a></td>
+  </tr>
+  <tr>
+    <td>Order Menu</td>
+    <td><a href="order-get.html" target="_blank">View Orders</a></td>
+    <td><a href="order-post.html" target="_blank">Place Order</a></td>
+  </tr>
+  <tr>
+    <td>Customer Menu</td>
+    <td><a href="customer-get.html" target="_blank">Registered Customers</a></td>
+    <td><a href="customer-post.html" target="_blank">Register New Customer</a></td>
+  </tr>
+ </table>
 
 </body>
 </html>
-
 
 
 
